@@ -6,7 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "tsc --noEmit && next lint",
+    "lint:fix": "tsc --noEmit && next lint --fix",
+    "test": "jest --watch",
+    "test:ci": "jest --ci",
+    "postbuild": "next-sitemap --config next-sitemap.config.js",
+    "up-latest": "yarn upgrade-interactive --latest",
+    "release": "standard-version",
+    "push-release": "git push --follow-tags origin main"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.3.6",
@@ -23,6 +30,9 @@
     "@types/react-dom": "18.0.6",
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1",
+    "eslint-config-sznm": "^1.0.0",
+    "next-sitemap": "^3.1.28",
+    "prettier": "^2.7.1",
     "typescript": "4.8.4"
   }
 }
