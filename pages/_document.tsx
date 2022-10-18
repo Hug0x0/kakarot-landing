@@ -8,7 +8,7 @@ export default function Document() {
                 <link rel="icon" href="/favicon.ico" />
                 <link href="https://rsms.me/inter/inter.css" rel="stylesheet" />
             </Head>
-            <body style={{background: "white"}}>
+            <body style={{background: "transparent"}}>
                 <ColorModeScript initialColorMode="light" />
                 <Main />
                 <NextScript />
