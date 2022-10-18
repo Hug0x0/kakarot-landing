@@ -1,4 +1,4 @@
-import { Flex, HStack, Text, useColorMode, VStack } from "@chakra-ui/react";
+import { Flex, HStack, Image, Text, useColorMode, VStack } from "@chakra-ui/react";
 import type { NextPage } from "next";
 
 import BigLink from "../components/BigLink";
@@ -10,7 +10,7 @@ const Home: NextPage = () => {
     <Flex direction="column" h="full" align="center">
       {/* Main Part */}
       <Flex maxW={1080} direction="column" w="full" h="full" justify="center" align="center" px={8}>
-        <Text
+        {/* <Text
           color={colorMode === "light" ? "black" : "white"}
           fontSize="100px"
           letterSpacing={-4}
@@ -26,7 +26,8 @@ const Home: NextPage = () => {
           fontWeight={800}
         >
           ZK-EVM on top of StarkNet
-        </Text>
+        </Text> */}
+        <Image w={{ base: "80%", md: "60%" }} src="/black_logo_transparent_background.png" />
         <VStack
           mt={12}
           mb={100}
@@ -53,10 +54,20 @@ const Home: NextPage = () => {
         </HStack>
       </Flex>
       {/* Footer */}
-      <Flex py={4} px={8} direction="row" w="full" justify="end" fontSize="sm" color="blackAlpha.600">
+      <Flex
+        py={4}
+        px={8}
+        direction={{ base: "column", md: "row" }}
+        w="full"
+        justify="end"
+        fontSize="sm"
+        color="blackAlpha.600"
+      >
         <Text>Copyright ©</Text>
-        <Text ml={1}>{new Date().getFullYear()} - </Text>
-        <Text ml={1}>Sayajin Labs. All rights reserved</Text>
+        <HStack>
+          <Text ml={1}>{new Date().getFullYear()} - </Text>
+          <Text ml={1}>Sayajin Labs. All rights reserved</Text>
+        </HStack>
       </Flex>
     </Flex>
   );
