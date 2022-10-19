@@ -50,7 +50,6 @@ const Home: NextPage = () => {
         <HStack>
           <BigLink href="https://twitter.com/KakarotZkEvm">Twitter</BigLink>
           <BigLink href="https://github.com/sayajin-labs">Github</BigLink>
-          <BigLink href="#">Telegram</BigLink>
         </HStack>
       </Flex>
       {/* Footer */}
@@ -63,9 +62,10 @@ const Home: NextPage = () => {
         fontSize="sm"
         color="blackAlpha.600"
       >
-        <Text>Copyright ©</Text>
+        <Text mr={1}>Copyright ©</Text>
         <HStack>
-          <Text ml={1}>{new Date().getFullYear()} - </Text>
+          <Text>{new Date().getFullYear()}</Text>
+          <Text ml={1}>-</Text>
           <Text ml={1}>Sayajin Labs. All rights reserved</Text>
         </HStack>
       </Flex>

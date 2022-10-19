@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="public/kakarot-logo.png" height="200">
+    <img src="public/kakarot_github_banner.png" height="200">
 </p>
 <div align="center">
   <h1 align="center">Kakarot</h1>

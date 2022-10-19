@@ -11,7 +11,7 @@ const defaultSEOConfig = {
     description: "Ethereum Virtual Machine written in Cairo.",
     images: [
       {
-        url: "https://kakarot.org/kakarot-logo.png",
+        url: "https://kakarot.org/kakarot_github_banner.png",
         alt: "Kakarot logo",
       },
     ],
