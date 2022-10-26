@@ -49,7 +49,7 @@ const Home: NextPage = () => {
         </VStack>
         <HStack>
           <BigLink href="https://twitter.com/KakarotZkEvm">Twitter</BigLink>
-          <BigLink href="https://github.com/sayajin-labs">Github</BigLink>
+          <BigLink href="https://github.com/sayajin-labs/kakarot">Github</BigLink>
         </HStack>
       </Flex>
       {/* Footer */}
